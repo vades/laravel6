@@ -17,7 +17,7 @@ class ContactFormController extends Controller
     public function __invoke(Request $request)
     {
         return response()->json([
-            'message' => __METHOD__,
+            'message' =>  __('app.success_email_send',['email' => $request->input('emailFrom')]),
             'input' =>$request->all()
         ]);
     }

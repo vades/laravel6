@@ -2,7 +2,8 @@
 
 namespace App\Http\Requests\Send;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\ApiFormRequest as FormRequest;
+//use Illuminate\Foundation\Http\FormRequest;
 
 class ContactFormRequest extends FormRequest
 {
